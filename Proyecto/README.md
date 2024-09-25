@@ -10,9 +10,9 @@ Este proyecto irá destinado al desarrollo de una web de un restaurante, que per
 
 # Wireframes.
 ## HomePage
-![Homepage](/images/Homepage.png)
+![Homepage](./images/Homepage.png)
 
 --- -
 
 ## About Page
-![About](/images/About.png)
+![About](./images/About.png)
