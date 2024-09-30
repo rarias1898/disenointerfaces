@@ -9,10 +9,22 @@ Este proyecto irá destinado al desarrollo de una web de un restaurante, que per
 2- Facilitar la comunicación entre el restaurante y sus clientes.
 
 # Wireframes.
-## HomePage
+## HomePage Desktop
 ![Homepage](./images/Homepage.png)
 
 --- -
 
-## About Page
+## HomePage M
+![MHomepage](./images/MHomepage.png)
+
+--- -
+
+## About Page Desktop
 ![About](./images/About.png)
+
+--- - 
+
+## About Page M
+![MAbout](./images/MAbout.png)
+
+--- -
