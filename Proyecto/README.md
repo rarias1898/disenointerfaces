@@ -1,37 +1,39 @@
-# Porque del proyecto.
+# Por qué del proyecto.
 
-En la actualidad, donde todo el mundo utiliza internet y sus dispositivos móviles para prácticamente todo, es fundamental que los negocios tengan presencia en línea. Un buen desarrollo web otorga visibilidad a los negocios y también facilita la interacción con los clientes.
+La mayoría de los softwares de generación de facturas son complicados, extensos, poco intuitivos y además vienen cargados de muchas otras funcionalidades que no le interesan a la pequeña y mediana empresa. Muchas de ellas siguen utilizando el papel para realizar este trabajo que puede realizarse de manera muy sencilla con el software correcto.
 
-Este proyecto irá destinado al desarrollo de una web de un restaurante, que permita a los clientes hacer reservas, mirar el menú y contactar con el mismo.
+Este proyecto irá destinado al desarrollo de una web de gestión y generación de facturas de una manera sencilla e intuitiva.
 
 # Descripción del proyecto.
 
-1- Creación de una web de un restaurante que permita a los clientes hacer reservas, mirar el menú y contactar con el mismo.
+1- Creación de una web de gestión y generación de facturas.
 
-2- Facilitar la comunicación entre el restaurante y sus clientes haciendo la comunicación más efectiva.
+2- Facilitar a la empresa que pueda realizar y mandar facturas con pocos clics.
+
+3- Tener una base de datos con clientes para que sea aún más rápido.
 
 # Wireframes.
 
-## HomePage Desktop
+## Landing Wireframe
 
-![Homepage](./images/Homepage.png)
-
---- -
-
-## HomePage M
-
-![MHomepage](./images/MHomepage.png)
+![Landing Wireframe](./images/LandingWireframe.png)
 
 --- -
 
-## About Page Desktop
+## M Landing Wireframe
 
-![About](./images/About.png)
+![M Landing Wireframe](./images/MLandingWireframe.png)
+
+--- -
+
+## Dashboard Wireframe
+
+![Dashboard Wireframe](./images/DashboardWireframe.png)
 
 --- - 
 
-## About Page M
+## M Dashboard Wireframe
 
-![MAbout](./images/MAbout.png)
+![M Dashboard Wireframe](./images/MDashboardWireframe.png)
 
 --- -
