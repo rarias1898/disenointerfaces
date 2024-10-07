@@ -1,0 +1,30 @@
+.square {
+  background-color: #226666;
+  width: 400px;
+  height: 400px;
+  margin: 5% auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex;
+}
+
+.item {
+  background-color: pink;
+  width: 180px;
+  height: 40px;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:first-child {
+  display: none;
+}
+
+.item:last-child {
+  display: none;
+}
