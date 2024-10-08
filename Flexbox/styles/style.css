@@ -5,10 +5,7 @@
   margin: 5% auto;
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: flex;
+  align-content: flex-start;
 }
 
 .item {
@@ -22,9 +19,6 @@
 }
 
 .item:first-child {
-  display: none;
-}
-
-.item:last-child {
-  display: none;
+  order: 2;
+  align-self: flex-end;
 }

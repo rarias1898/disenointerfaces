@@ -1,0 +1,27 @@
+body {
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  color: white;
+  margin-right: 2rem;
+}
+
+.titulo {
+ margin: 2rem;
+ max-width: 50rem;
+}
+
+.articulos {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
