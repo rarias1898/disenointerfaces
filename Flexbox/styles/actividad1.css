@@ -8,6 +8,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 header svg {
@@ -16,18 +17,55 @@ header svg {
   margin-top: 2rem;
 }
 
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-images {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.title-images :last-child {
+  margin-left: 4rem;
+}
+
 .titulo {
- margin: 2rem;
- max-width: 50rem;
+  max-width: 50rem; 
+  margin-left: 15rem;
+}
+
+.titulo h1 {
+  font-size: 2.5rem;
+}
+
+hr {
+  color: #b1acb3;
 }
 
 .articulos {
-  margin: 1rem;
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-content: center; 
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.articulos div {
+  width: 30%;
+  margin: 1rem;
+  padding: 3rem;
+}
+
+.articulos h3 {
+  color: #3688c2;
+  font-size: 1.5rem;
+}
+
+.articulos p {
+  font-size: 1rem;
 }
 
 footer {
@@ -35,5 +73,34 @@ footer {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  padding-top: 1rem;
+}
+
+footer img {
+  padding-bottom: 1rem;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.whatsapp {
+  background-color: #4ec148;
+}
+
+.twitter {
+  background-color: #1ea1f3;
+}
+
+.plus {
+  background-color: #fe6651;
 }
