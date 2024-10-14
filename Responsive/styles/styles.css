@@ -1,0 +1,16 @@
+.container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.first {
+  display: flex;
+}
+
+.first img {
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
