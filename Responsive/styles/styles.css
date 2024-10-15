@@ -1,16 +1,86 @@
+html {
+  font-family: "Segoe UI";
+  margin: 0 auto
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 34px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .container {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+img {
+  width: 30%;
+  object-fit: contain;
 }
 
 .first {
   display: flex;
 }
 
-.first img {
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
+}
+
+.seccond .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item > div {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.item :nth-child(2) {
+  width: 70%;
+}
+
+hr {
+  color: #dbdbdb;
+}
+
+a {
+  color: #0995f3
+}
+
+@media (max-width: 768px) {
+  .first img {
+    display: none;
+  }
+
+  .text-container {
+    display: none;
+  }
+
+  .seccond {
+    margin-top: 20%;
+  }
+
+  .seccond .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .container > hr {
+    display: none;
+  }
+
+  .item > div {
+    display: flex;
+    align-items: center;
+  }
 }
