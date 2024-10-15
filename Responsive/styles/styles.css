@@ -55,7 +55,7 @@ a {
   color: #0995f3
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .first img {
     display: none;
   }
