@@ -32,6 +32,23 @@
   background-color: #8D8D8D;
 }
 
+.explicaciones {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #8D8D8D;
+  border-radius: 0.5rem;
+}
+
+.explicacion {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #1E1E1E;
+}
+
+.explicacion p {
+  margin: 0;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   body {
@@ -55,10 +72,8 @@
     justify-content: center;
     border: none;
   }
-}
 
-@media (min-width: 601px) and (max-width: 1000px) {
-  .container {
+  .explicaciones {
     display: none;
   }
 }
