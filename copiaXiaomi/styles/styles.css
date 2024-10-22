@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Source Sans Pro Regular";
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+body {
+  font-family: "Source Sans Pro Regular";
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
