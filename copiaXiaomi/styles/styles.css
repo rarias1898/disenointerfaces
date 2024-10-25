@@ -85,11 +85,38 @@ hr {
 /* ! MAIN CONTENT */
 .slider {
   padding: 1rem 15rem;
+  margin-top: 2rem;
   color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
+}
+
+.slider-lines {
+  display: flex;
+  margin-left: 50%;
+  gap: 1rem;
+  width: 20rem;
+  height: 1.015rem;
+}
+
+.tex-part h1 {
+  font-size: 40px;
+}
+
+.tex-part h2 {
+  color: black;
+  font-size: 25px;
+}
+
+.tex-part p {
+  display: block;
+  width: 56%;
+}
+
+.tex-part :nth-child(4) {
+  margin-top: 5rem;
 }
 
 .price-part {
@@ -100,11 +127,61 @@ hr {
 
 .price-part button {
   color: white;
-  background-color: black;
+  background-color: #191919;
   border-radius: .5rem;
+  border: none;
   width: 10rem;
-  height: 2rem;
+  height: 2.5rem;
+}
+
+.productos-populares {
+  background-color: #f7f7f7;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.productos-populares h1 {
+  margin-top: 3rem;
+}
+
+.tabs {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 3rem;
   font-weight: bold;
+}
+
+.movil-section {
+  border: 16px solid white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10rem;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-right: 10rem;
+}
+
+.text-section h1 {
+  font-size: 40px;
+}
+
+.text-section h2 {
+  color: black;
 }
 
 /* ! Footer */
