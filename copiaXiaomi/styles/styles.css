@@ -43,6 +43,10 @@ hr {
   box-shadow: 0px 0px 10px -5px;
 }
 
+.navegacion img {
+  cursor: pointer;
+}
+
 .navegacion nav {
   width: 100%;
   display: flex;
@@ -64,6 +68,12 @@ hr {
   align-items: center;
 }
 
+.navegacion a:hover {
+  color: #ff8533;
+  text-decoration: underline;
+  text-underline-offset: 1.5rem;
+}
+
 .left-nav {
   display: flex;
   gap: 1.25rem;
@@ -73,6 +83,10 @@ hr {
 .right-nav {
   display: flex;
   gap: 1.25rem; 
+}
+
+.right-nav i {
+  cursor: pointer;
 }
 
 .navegacion a {
@@ -101,6 +115,22 @@ hr {
   height: 1.015rem;
 }
 
+.slider-lines hr {
+  border: none;
+  height: 0.150rem; 
+  background: lightgray;
+  margin: 10px 0;
+}
+
+.slider-lines hr:nth-child(3) {
+  background: linear-gradient(to left, lightgrey 50%, #ff8533 50%);
+}
+
+.slider-lines i {
+  color: lightgrey;
+  cursor: pointer;
+}
+
 .tex-part h1 {
   font-size: 40px;
 }
@@ -108,11 +138,6 @@ hr {
 .tex-part h2 {
   color: black;
   font-size: 25px;
-}
-
-.tex-part p {
-  display: block;
-  width: 56%;
 }
 
 .tex-part :nth-child(4) {
@@ -157,6 +182,13 @@ hr {
   font-weight: bold;
 }
 
+.tabs :nth-child(1) {
+  color: #ff8533;
+  text-decoration: underline;
+  text-underline-offset: 3rem;
+  text-decoration-thickness: .2rem;
+}
+
 .movil-section {
   border: 16px solid white;
   border-radius: 16px;
@@ -186,7 +218,7 @@ hr {
 
 /* ! Footer */
 footer {
-  background-color: black;
+  background-color: #191919;
   /* position: fixed;
   bottom: 0; */
   width: 100%;
@@ -197,6 +229,11 @@ footer {
   color: black;
   font-size: 14px;
   color: #898989;
+}
+
+.footer-enlaces a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .footer-enlaces h1, h2, h3, h4 {
@@ -227,6 +264,10 @@ footer {
 
 .social-media i {
   color: white;
+}
+
+.social-media i:hover {
+  cursor: pointer;
 }
 
 .item a{
@@ -274,6 +315,12 @@ footer {
   align-items: center;
 }
 
+.google-play h4:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .google-play svg {
   height: 2rem;
 }
@@ -289,6 +336,10 @@ footer {
   color: white;
   padding: 0 15rem 1rem;
   display: flex;
+}
+
+.legal .item p {
+  margin-right: 1rem;
 }
 
 .legal .item:last-child {
