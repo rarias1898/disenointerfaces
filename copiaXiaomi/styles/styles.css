@@ -20,6 +20,10 @@ hr {
   width: 75%;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ! Header */
 .banner {
   display: flex;
@@ -98,13 +102,17 @@ hr {
 
 /* ! MAIN CONTENT */
 .slider {
-  padding: 1rem 15rem;
   margin-top: 2rem;
   color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
+}
+
+.slider > img {
+  width: 2.5rem;
+  cursor: pointer;
 }
 
 .slider-lines {
@@ -159,6 +167,10 @@ hr {
   height: 2.5rem;
 }
 
+.price-part button:hover {
+  background-color: #444;
+}
+
 .productos-populares {
   background-color: #f7f7f7;
   margin-top: 1rem;
@@ -182,11 +194,12 @@ hr {
   font-weight: bold;
 }
 
-.tabs :nth-child(1) {
+.tabs .items:hover {
   color: #ff8533;
   text-decoration: underline;
   text-underline-offset: 3rem;
   text-decoration-thickness: .2rem;
+  cursor: pointer;
 }
 
 .movil-section {
@@ -298,10 +311,15 @@ footer {
   width: 75%;
 }
 
+.store-zone hr {
+  width: 100%;
+}
+
 .qr-zone {
   color: white;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
