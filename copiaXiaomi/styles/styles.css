@@ -51,6 +51,10 @@ button {
   cursor: pointer;
 }
 
+.navegacion img:hover {
+  border-radius: 1rem;
+}
+
 .navegacion nav {
   width: 100%;
   display: flex;
@@ -75,7 +79,8 @@ button {
 .navegacion a:hover {
   color: #ff8533;
   text-decoration: underline;
-  text-underline-offset: 1.5rem;
+  text-underline-offset: 1.7rem;
+  text-decoration-thickness: .2rem;
 }
 
 .left-nav {
@@ -91,6 +96,13 @@ button {
 
 .right-nav i {
   cursor: pointer;
+}
+
+.right-nav i:hover {
+  color: #ff8533;
+  text-decoration: underline;
+  text-underline-offset: 1.7rem;
+  text-decoration-thickness: .2rem;
 }
 
 .navegacion a {

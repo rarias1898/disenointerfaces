@@ -1,0 +1,80 @@
+body {
+    font-size: 2em;
+    margin:0;
+    padding:5%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin:0 auto;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"]{
+    margin-top: 5%;
+}
+input[type="text"]:focus{
+    /*border:5px solid red;*/
+    outline: none;
+}
+
+input[type="password"]:focus{
+    outline: none;
+}
+
+.campo-usuario::before{
+    content:'';
+    background-image: url(https://cdn4.iconfinder.com/data/icons/evil-icons-user-interface/64/avatar-256.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.campo-usuario{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+}
+input[type="text"]{
+    border: 0px;
+    margin-top: 0;
+    font-size: 2rem;
+    height: 100%;
+    width: calc(85% - 30px)
+}
+
+.campo-password {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+}
+
+input[type="password"] {
+    border: 0px;
+    margin-top: 0;
+    font-size: 2rem;
+    height: 100%;
+    width: calc(85% - 30px);
+}
+
+.campo-password::before {
+    transition: all .3s;
+    content:'';
+    background-image: url(https://cdn0.iconfinder.com/data/icons/streamline-emoji-1/48/106-hear-no-evil-monkey-256.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.campo-password:focus-within::before{
+    content:'';
+    background-image: url(https://cdn0.iconfinder.com/data/icons/streamline-emoji-1/48/105-see-no-evil-monkey-512.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
