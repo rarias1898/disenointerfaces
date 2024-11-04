@@ -8,13 +8,11 @@ input {
   height: 5rem;
   appearance: none;
   box-shadow: 0px 0px 1rem 0px black;
-  border: .5rem solid black;
-  
+  border: .4rem  solid black;
+  outline: .5rem solid white;
 }
 
 input:hover {
-  /* background-color: green;
-  opacity: 0.3; */
   background-color: rgba(0, 130, 0, 0.3);
 }
 
