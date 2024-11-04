@@ -1,0 +1,41 @@
+h1, p {
+  color: #ffffff;
+}
+
+.section1 {
+  width: 50%;
+  background-color: #4CAF50;
+  padding: 1em;
+  margin-bottom: 5em;
+  border-right: 1em solid #000000;
+  border-bottom: dashed 2em #999999;
+}
+
+.section2 {
+  width: 75%;
+  background-color: #000000;
+  border-top: 1em solid #4CAF50;
+  border-bottom: 1em solid #4CAF50;
+  border-left: 2em solid #000000;
+}
+
+@media (max-width: 425px) {
+  body {
+    margin: 0;
+  }
+
+  .section1 {
+    background-color: #999999;
+    border: none;
+    margin-top: 1em;
+    width: auto;
+    margin-bottom: 1em;
+  }
+
+  .section2 {
+    width: auto;
+    border-right: 2em solid #000000;
+    border-left: 2em solid #000000;
+    border-bottom: 2em solid white;
+  }
+}
