@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  font-family: "Roboto"
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+}
+
+/* ! GREEN SECTION */
+
+.green-section {
+  background-color: #3ad985;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.green-section h1 {
+  font-size: 3.4375rem;
+  padding: 0 17rem 0 17rem;
+}
+
+.green-section p {
+  font-size: 1rem;
+  padding: 0 17rem 0 17rem;
+}
+
+.green-section span {
+  color: #fff10e;
+  width: 50%;
+}
+
+/* ! FORM SECTION */
+
+.form-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+form {
+  margin-bottom: 3rem;
+}
+
+.form-section span {
+  text-decoration: underline;
+}
+
+.form-section input[type=text], input[type=password] {
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form-section input[type=text], input[type=password]:focus {
+  outline: none;
+}
+
+.green-button {
+  width: 100%;
+  height: 3rem;
+  background-color: #4aa375;
+  color: white;
+  border-radius: 1.5rem;
+  border: none;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons p {
+  display: flex;
+  
+}
+
+.gray-button {
+  width: 47%;
+  height: 3rem;
+  background-color: #f5f5f5;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  font-weight: bold;
+}
+
+/* s */
