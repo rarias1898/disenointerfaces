@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url(../font/AmazonEmber_Bd.ttf);
+}
+
+body {
+  font-family: "Amazon Ember";
+  margin: 0 auto;
+  padding: 0;
+}
+
+span {
+  cursor: pointer;
+  color: #0073bb;
+}
+
+span:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  color: rgb(22, 25, 31);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 18%;
+}
+
+.aws-logo {
+  width: 84px;
+  height: 51px;
+  margin-bottom: 2rem;
+}
+
+.form-radios {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.radio {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: .3rem;
+  flex-wrap: wrap;
+  padding: .5rem;
+}
+
+.radio:has(input[type="radio"]:checked) {
+  border-color: #1d78d3;
+  background-color: #f0f9ff;
+}
+
+.radio small {
+  margin: 5px 0 0 1.3rem;
+}
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.email-input input {
+  height: 2rem;
+  border-radius: .3rem;
+  padding: 0 0 0 .5rem;
+}
+
+input[type="submit"] {
+  background-color: #1d78d3;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #1d78d3;
+  border-radius: .3rem;
+  height: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}

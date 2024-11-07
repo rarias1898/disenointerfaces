@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Practica 6 | AWS</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://eu-north-1.signin.aws.amazon.com/v2/assets/_next/static/media/aws-logo@2x.7c50e6f9.png"
+        alt="aws-logo"
+        class="aws-logo"
+      />
+      <h1>Iniciar sesión</h1>
+      <form>
+        <div class="form-radios">
+          <div class="radio">
+            <input type="radio" name="aws" id="raiz" />
+            <label for="raiz">Usuario raíz</label>
+            <small
+              >Propietario de la cuenta que realiza tareas que requieren acceso
+              ilimitado. <span>Más información</span></small
+            >
+          </div>
+
+          <div class="radio">
+            <input type="radio" name="aws" id="iam" />
+            <label for="iam">Usuario IAM</label>
+            <small
+              >Usuario de una cuenta que realiza tareas diarias.
+              <span>Más información</span></small
+            >
+          </div>
+        </div>
+
+        <div class="email-input">
+          <label for="email">Dirección de email del usuario raíz</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="nombredeusuario@ejemplo.com"
+          />
+        </div>
+
+        <input type="submit" value="Siguente" />
+
+        <small
+          >Al continuar, acepta el <span>Contrato de cliente de AWS</span> u
+          otro acuerdo para los servicios de AWS y el
+          <span>Aviso de privacidad.</span> Este sitio utiliza cookies
+          esenciales. Consulte nuestro <span>Aviso de cookies</span> para
+          obtener más información.</small
+        >
+      </form>
+    </div>
+  </body>
+</html>
