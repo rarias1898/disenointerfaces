@@ -58,18 +58,35 @@ form {
 
 .form-section span {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .form-section input[type=text], input[type=password] {
   width: 100%;
   font-size: 1rem;
-  margin-bottom: 2rem;
   border: none;
   border-bottom: 1px solid black;
 }
 
 .form-section input[type=text], input[type=password]:focus {
   outline: none;
+}
+
+.form-email, .form-password {
+  margin-bottom: 3rem;
+}
+
+.campo-contraseña {
+  display: flex;
+}
+
+.campo-contraseña::after {
+  content: "";
+  background-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/eye-256.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 
 .green-button {
@@ -80,6 +97,7 @@ form {
   border-radius: 1.5rem;
   border: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .buttons {
@@ -91,18 +109,16 @@ form {
 }
 
 .buttons p {
-  display: flex;
-  
+  margin-bottom: 2rem;
 }
 
 .gray-button {
-  width: 47%;
+  width: 48%;
   height: 3rem;
   background-color: #f5f5f5;
   border-radius: 1.5rem;
   margin-bottom: 1rem;
   border: none;
   font-weight: bold;
+  cursor: pointer;
 }
-
-/* s */

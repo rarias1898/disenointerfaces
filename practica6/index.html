@@ -28,23 +28,30 @@
 
       <section class="form-section">
         <form>
-          <input
-            type="text"
-            placeholder="Correo electrónico o número  de teléfono móvil verificado"
-            name="email"
-            id="email"
-          />
-          <p>
-            Si lo deseas, puedes
-            <span>iniciar sesión con un código de un solo uso</span>
-          </p>
+          <div class="form-email">
+            <input
+              type="text"
+              placeholder="Correo electrónico o número  de teléfono móvil verificado"
+              name="email"
+              id="email"
+            />
+            <p>
+              Si lo deseas, puedes
+              <span>iniciar sesión con un código de un solo uso</span>
+            </p>
+          </div>
 
-          <input type="password" placeholder="Contraseña" />
-          <p><span>¿Has olvidado tu contraseña?</span></p>
+          <div class="form-password">
+            <div class="campo-contraseña">
+              <input type="password" placeholder="Contraseña" />
+            </div>
+            <p><span>¿Has olvidado tu contraseña?</span></p>
+          </div>
 
           <button class="green-button">Continuar</button>
         </form>
 
+        
         <div class="buttons">
           <p>¿No tienes una cuenta? Crea una ahora:</p>
           <input
