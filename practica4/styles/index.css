@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto";
+  margin: 0 auto;
+  padding: 0;
+}
+
+span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container {
+  background-color: #f2f2f2;
+}
+
+.form-container {
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container h1 {
+  color: #0073d6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+  margin: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+input[type="submit"] {
+  border: none;
+  border-radius: 1rem;
+  height: 2rem;
+}
+
+.grey-button {
+  background-color: #ededed;
+}
+
+.google-button {
+  background-color: #0073d6;
+  color: white;
+}
