@@ -1,0 +1,17 @@
+Se requiere maquetar la propuesta gráfica adjunta teniendo en cuenta la siguiente información:
+- Botones:
+    - Fondo: red o #fff.
+    - Color: #fff o #000.
+    - Efecto hover sobre los botones:
+        - Fondo red pasa a #fff y borde #000. Color del texto #000.
+        - Fondo #fff pasa a red sin borde y color de texto #fff.
+- Fondo:
+    - #f1f1f1.
+- La imagen del ojo es la siguiente: https://www.iconfinder.com/icons/8666618/eye_icon (contraseña)
+- Los iconos empleados son los siguientes:
+    - https://www.iconfinder.com/icons/3586369/discount_price_sale_icon
+    - https://www.iconfinder.com/icons/3615756/card_coupon_discount_gift_label_offer_voucher_icon
+    - https://www.iconfinder.com/icons/115775/truck_transportation_transport_vehicle_icon
+- La tipografía es la siguiente: 
+    - Roboto Condensed
+    - https://fonts.google.com/specimen/Roboto+Condensed?query=roboto
