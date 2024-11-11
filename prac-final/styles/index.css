@@ -156,3 +156,10 @@ input[type=email], input[type=password] {
   background-color: red;
   border: none;
 }
+
+.icon {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/699008-icon-22-eye-256.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px;
+}
