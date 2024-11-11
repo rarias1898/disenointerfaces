@@ -15,6 +15,10 @@ small {
   color: grey;
 }
 
+p {
+  color: grey;
+}
+
 .container {
   display: flex;
   align-items: center;
