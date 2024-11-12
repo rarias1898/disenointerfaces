@@ -1,0 +1,25 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gray-zone {
+  width: 500px; 
+  height: 500px; 
+  background-color: #212530;
+}
+
+.intro-buttons {
+  border: none;
+  height: 5rem;
+}
