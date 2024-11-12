@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: "Nunito Sans", serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  height: 100vh;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+}
+
+.form-section {
+  background-color: black;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.entrar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid #1c5187;
+}
+
+.nuevo {
+  width: 50%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.entrar, .nuevo:hover {
+  cursor: pointer;
+}
+
+form {
+  background-color: #fff;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.form-container > p {
+  margin-bottom: 3rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=email], input[type=password] {
+  height: 1.5rem;
+  border-radius: .5rem;
+  border: 1px solid #ccc;
+  padding-left: .7rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+input[type=submit] {
+  background-color: #008001;
+  color: #fff;
+  text-transform: uppercase;
+  height: 3rem;
+  border: none;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+.checkbox-part label {
+  font-weight: lighter;
+}
+
+.olvidado {
+  display: flex;
+  justify-content: center;
+}
+
+.hrcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.image-section {
+  position: relative;
+  top: 350px;
+  left: 450px;
+}
+
+.mostrarResponsive {
+  display: none;
+}
+
+/* ! Responsive */
+
+@media (max-width: 625px) {
+  .banner {
+    background-color: black;
+    color: #fff;
+  }
+
+  .form-section {
+    background-color: #f5deb4;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .nuevo {
+    background-color: #f5deb4;
+  }
+
+  .res {
+    display: none;
+  }
+
+  .mostrarResponsive {
+    display: block;
+    margin-left: 2rem;
+  }
+
+  .ocultarResponsive {
+    display: none;
+  }
+}
