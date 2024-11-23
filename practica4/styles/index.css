@@ -4,6 +4,7 @@ body {
   font-family: "Roboto";
   margin: 0 auto;
   padding: 0;
+  background-color: #f2f2f2;
 }
 
 span {
@@ -36,6 +37,15 @@ span {
 form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 input[type="email"],
@@ -43,12 +53,33 @@ input[type="password"] {
   margin: 1rem;
   border: none;
   border-bottom: 1px solid black;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
 }
 
 input[type="submit"] {
   border: none;
   border-radius: 1rem;
   height: 2rem;
+  width: 70%;
+}
+
+.last-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 60%;
 }
 
 .grey-button {
@@ -58,4 +89,11 @@ input[type="submit"] {
 .google-button {
   background-color: #0073d6;
   color: white;
+}
+
+.icono-google {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-256.png");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 20px 20px;
 }
