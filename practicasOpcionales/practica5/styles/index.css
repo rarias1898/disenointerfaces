@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body, html {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .container {
@@ -14,12 +18,114 @@ body, html {
 }
 
 .gray-zone {
-  width: 500px; 
-  height: 500px; 
+  width: 700px; 
+  height: 600px; 
   background-color: #212530;
 }
 
-.intro-buttons {
-  border: none;
+.top-buttons {
+  width: 100%;
   height: 5rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+}
+
+.left-button {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #5d63ae;
+}
+
+.right-button {
+  width: 50%;
+  background-color: #575761;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section {
+  margin: 2rem 0 0 10rem;
+}
+
+.form-section h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.form-section p {
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+input[type="email"] {
+  width: 75%;
+  height: 3.5rem;
+  margin: .5rem 0 1rem 0;
+}
+
+.input-part {
+  margin: 1rem 1rem 0 0 ;
+  display: flex;
+  gap: 2rem;
+}
+
+span {
+  color: #6b65a6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.input-part p {
+  font-size: .8rem;
+}
+
+.input-part input {
+  background-color: #53536f;
+  color: white;
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.last-part {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.last-part input {
+  height: 2.5rem;
+  width: 60%;
+  border-radius: .5rem;
+  border: none;
+  display: flex;
+}
+
+.google-icon {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-256.png");
+  background-repeat: no-repeat;
+  background-position: left 2px center;
+  background-size: 30px 30px;
+  margin-bottom: 2rem;
+}
+
+.facebook-icon {
+  background-image: url("https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-256.png");
+  background-repeat: no-repeat;
+  background-position: left 0px center;
+  background-size: 30px 30px;
+  background-color: #1977f3;
+  color: white;
 }

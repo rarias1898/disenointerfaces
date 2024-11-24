@@ -9,8 +9,35 @@
   <body>
     <div class="container">
       <section class="gray-zone">
-        <button class="intro-buttons">Iniciar sesión</button>
-        <button class="intro-buttons">Crear cuenta</button>
+        <div class="top-buttons">
+          <div class="left-button">
+            <h1>Iniciar sesión</h1>
+          </div>
+          <div class="right-button">
+            <h1>Crear cuenta</h1>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h1>¿Ya tienes una cuenta?</h1>
+          <p>Puedes iniciar sesión con tu cuenta.</p>
+
+          <form action="#">
+            <label for="email">Correo electrónico*</label>
+            <input type="email" id="email" name="email" />
+
+            <div class="input-part">
+              <input type="submit" value="Iniciar sesión">
+              <p><span>¿Has olvidado tu contraseña?</span></p>
+            </div>
+
+            <div class="last-part">
+              <p>Puedes iniciar sesión con cualquiera de estos métodos:</p>
+              <input type="submit" value="Iniciar sesión con Google" class="google-icon">
+              <input type="submit" value="Iniciar sesión con Facebook" class="facebook-icon">
+            </div>
+          </form>
+        </div>
       </section>
     </div>
   </body>
