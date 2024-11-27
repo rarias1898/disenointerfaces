@@ -22,7 +22,7 @@ body {
 
 .logo img {
   width: 70%;
-  height: 70%;
+  height: auto;
 }
 
 .menu {
@@ -60,6 +60,11 @@ li:hover {
   list-style: none;
   font-size: large;
   gap: 1rem;
+  color: #eb9c64;
+}
+
+.categorias h1 {
+  color: #75c7d2;
 }
 
 .content {
@@ -87,4 +92,11 @@ li:hover {
 .card img {
   height: 40%;
   object-fit: contain;
+}
+
+.stars {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
