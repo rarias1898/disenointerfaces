@@ -12,14 +12,14 @@ body {
   margin: 0;
 }
 
-header {
+.index-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem 2rem 6rem;
 }
 
-header img {
+.index-header img {
   cursor: pointer;
   width: auto;
   height: 7rem;
@@ -55,25 +55,25 @@ button {
   color: white;
 }
 
-main {
+.index-main {
   padding: 4rem 6rem 0 6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main small {
+.index-main small {
   color: #0085FF;
   font-size: 1.5rem;
 }
 
-main p  {
+.index-main p  {
   margin: 0;
   color: #8D8D8D;
   font-size: 5rem;
 }
 
-main button {
+.index-main button {
   background-color: transparent;
   border: 1px solid #8D8D8D;
   color: #8D8D8D;
@@ -81,14 +81,29 @@ main button {
   width: 10rem;
 }
 
-main button:hover {
+.index-main button:hover {
   background-color: #8D8D8D;
   color: #1E1E1E;
 }
 
-main img {
+.index-main img {
   width: auto;
   height: 25%;
+}
+
+.login-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-main img {
+  width: 10%;
+}
+
+.login-main form {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ! Medias */
@@ -96,7 +111,7 @@ main img {
 /* ? Teléfonos */
 @media (max-width: 767px) {
 
-  header {
+  .index-header {
     padding: 2rem;
   }
 
@@ -104,19 +119,19 @@ main img {
     flex-direction: column;
   }
 
-  main {
+  .index-main {
     flex-direction: column;
   }
 
-  main small {
+  .index-main small {
     font-size: 1rem;
   }
 
-  main p {
+  .index-main p {
     font-size: 3rem;
   }
 
-  main img {
+  .index-main img {
     width: 95%;
   }
 }
