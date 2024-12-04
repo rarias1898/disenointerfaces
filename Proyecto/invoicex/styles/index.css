@@ -95,6 +95,24 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #8D8D8D;
+}
+
+.login-main h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.login-main span {
+  color: #0085FF;
+}
+
+.login-main p {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .login-main img {
@@ -102,8 +120,41 @@ button {
 }
 
 .login-main form {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  width: 20%;
+}
+
+.login-main input[type="email"],
+.login-main input[type="password"] {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #2D2D2D;
+  border: none;
+  border-radius: 5px;
+  color: #8D8D8D;
+}
+
+.login-main input[type="submit"] {
+  display: flex;
+  gap: 1rem;
+  border: none;
+  width: 100%;
+}
+
+.signup-button {
+  background-color: #8D8D8D;
+  color: #1E1E1E;
+}
+  
+
+.google-icon {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-256.png");
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 20px 20px;
 }
 
 /* ! Medias */
