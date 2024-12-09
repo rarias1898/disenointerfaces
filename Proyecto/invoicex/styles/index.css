@@ -107,6 +107,11 @@ button {
 
 .login-main span {
   color: #0085FF;
+  cursor: pointer;
+}
+
+.login-main span:hover{
+  text-decoration: underline;
 }
 
 .login-main p {
@@ -137,28 +142,35 @@ button {
   color: #8D8D8D;
 }
 
-.login-main input[type="submit"] {
+.login-buttons {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
+}
+
+.login-buttons input {
+  height: 2rem;
   border: none;
-  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .signup-button {
   background-color: #8D8D8D;
   color: #1E1E1E;
 }
-  
 
 .google-icon {
   background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-256.png");
   background-repeat: no-repeat;
   background-position: left 20px center;
   background-size: 20px 20px;
+
+  background-color: #2D2D2D;
+  color: #8D8D8D;
 }
 
 /* ! Medias */
-
 /* ? Teléfonos */
 @media (max-width: 767px) {
 
