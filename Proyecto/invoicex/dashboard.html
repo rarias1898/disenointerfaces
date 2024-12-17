@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <title>Invoicex | Dashboard</title>
-  </head>
-  <body>
-    <header class="dashboard-header">
-      
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">logoipsum<sup>®</sup></div>
+            <nav>
+                <ul>
+                    <li><a href="#">🏠 Home</a></li>
+                    <li><a href="#">📄 Facturas</a></li>
+                    <li><a href="#">👤 Clientes</a></li>
+                </ul>
+            </nav>
+            <div class="logout"><a href="#">🔓 Log Out</a></div>
+        </aside>
 
-    <main class="dashboard-main">
-      
-    </main>
-  </body>
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Última Factura -->
+            <section class="ultima-factura">
+                <h2>Última Factura <span>264</span></h2>
+                <div class="factura-info">
+                    <h3>SwiftSpace</h3>
+                    <p>B21597778</p>
+                    <p>C/ Blass Infante N°44</p>
+                    <p>21620 Trigueros, Huelva</p>
+                    <p class="fecha">16/09/2023</p>
+                    <p class="precio">75.50€</p>
+                    <div class="printer-icon">🖨️</div>
+                </div>
+            </section>
+
+            <!-- Clientes -->
+            <section class="clientes">
+                <h2>Clientes</h2>
+                <input type="text" placeholder="core" />
+                <div class="cliente-buttons">
+                    <button>CoreSense</button>
+                    <button>TempleCore</button>
+                </div>
+            </section>
+
+            <!-- Noticias -->
+            <section class="noticias">
+                <h2>Noticias</h2>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto desde el siglo XVI.</p>
+            </section>
+
+            <!-- Botones de redes sociales -->
+            <section class="social">
+                <a href="#">✖️</a>
+                <a href="#">📧</a>
+                <a href="#">📷</a>
+                <a href="#">🔗</a>
+                <a href="#">📧</a>
+            </section>
+        </main>
+
+        <!-- Perfil -->
+        <div class="profile">
+            <span>username</span>
+            <span>FREE</span>
+        </div>
+    </div>
+</body>
 </html>
