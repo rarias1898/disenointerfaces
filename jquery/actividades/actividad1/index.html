@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 1</title>
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Acceso</h1>
+
+      <section class="card">
+        <p>Inicia sesión con tu cuenta o crea una nueva.</p>
+
+        <div class="botones">
+          <div class="item">
+            <p>¿Tienes ya una cuenta?</p>
+            <button class="login">Iniciar sesión</button>
+          </div>
+          <div class="item">
+            <p>¿No tienes cuenta?</p>
+            <button>Crear una cuenta</button>
+          </div>
+        </div>
+
+        <form action="#">
+          <input type="email" name="email" placeholder="Correo electrónico o nombre de acceso">
+          <input type="password" name="password" placeholder="Contraseña">
+          <div class="passAndButton">
+            <p>¿Has olvidado la contraseña?</p>
+            <button class="loginBtn" disabled>Iniciar sesión</button>
+          </div>
+          <div class="social-card">
+            <small>Iniciar sesión con</small>
+            <button class="facebook">Facebook</button>
+            <button class="google">Google</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
