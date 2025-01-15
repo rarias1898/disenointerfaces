@@ -4,8 +4,8 @@ $(function() {
     $("form").css('display', "flex")
   })
 
-  $("input").on("change", function() {
-    $("loginBtn").removeAttr("disabled")
+  $("input").on("input", function() {
+    $(".loginBtn").removeAttr("disabled")
   })
 
 }); 
