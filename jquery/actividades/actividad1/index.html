@@ -4,43 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actividad 1</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Acceso</h1>
+      <div class="acceso-container">
+        <h1>Acceso</h1>
 
-      <section class="card">
-        <p>Inicia sesión con tu cuenta o crea una nueva.</p>
+        <section class="card">
+          <p>Inicia sesión con tu cuenta o crea una nueva.</p>
 
-        <div class="botones">
-          <div class="item">
-            <p>¿Tienes ya una cuenta?</p>
-            <button class="login">Iniciar sesión</button>
+          <div class="botones">
+            <div class="item">
+              <p>¿Tienes ya una cuenta?</p>
+              <button class="login">Iniciar sesión</button>
+            </div>
+            <div class="item">
+              <p>¿No tienes cuenta?</p>
+              <button class="signup">Crear una cuenta</button>
+            </div>
           </div>
-          <div class="item">
-            <p>¿No tienes cuenta?</p>
-            <button>Crear una cuenta</button>
-          </div>
+
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              placeholder="Correo electrónico o nombre de acceso"
+            />
+            <input type="password" name="password" placeholder="Contraseña" />
+            <div class="passAndButton">
+              <p>¿Has olvidado la contraseña?</p>
+              <button class="loginBtn" disabled>Iniciar sesión</button>
+            </div>
+            <div class="social-card">
+              <small>Iniciar sesión con</small>
+              <button class="facebook">Facebook</button>
+              <button class="google">Google</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div class="cuenta-container" hidden>
+        <h1>Cuenta</h1>
+
+        <div class="card-group">
+          <div class="cuenta-card proveedor">Eres proveedor</div>
+          <div class="cuenta-card cliente">Eres cliente final</div>
         </div>
+      </div>
+
+      <div class="proveedor-container" hidden>
+        <h1>Crear una cuenta proveedor</h1>
 
         <form action="#">
-          <input type="email" name="email" placeholder="Correo electrónico o nombre de acceso">
-          <input type="password" name="password" placeholder="Contraseña">
-          <div class="passAndButton">
-            <p>¿Has olvidado la contraseña?</p>
-            <button class="loginBtn" disabled>Iniciar sesión</button>
-          </div>
-          <div class="social-card">
-            <small>Iniciar sesión con</small>
-            <button class="facebook">Facebook</button>
-            <button class="google">Google</button>
-          </div>
+          <label for="nombre">Nombre comercial</label>
+          <input type="text" name="nombre" placeholder="Nombre">
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" placeholder="bb@bb.es">
+
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" placeholder="******">
+
+          <label for="passwordConfirm">Confirmar contraseña</label>
+          <input type="password" name="passwordConfirm" placeholder="******">
+
+          <label for="date">Fecha de nacimiento</label>
+          <input type="date" name="date">
+
+          <hr>
+
+          <input type="checkbox" name="confirm">
+          <label for="confirm">Confirmo que acepto los terminos del contrato de la cuenta y que estoy de acuerdo con la política de privacidad</label>
+
+          <hr>
+
+          <button>Crear</button>
         </form>
-      </section>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
   </body>
 </html>
