@@ -20,4 +20,23 @@ $(function() {
     })
   })
 
+  $(".cliente").on("click", function() {
+    $(".cuenta-container").fadeOut("slow", function() {
+      $(".cliente-container").fadeIn("slow")
+    })
+  })
+
+  $(".uniForm input").on("blur", function () {
+    const $input = $(this);
+    const $errorMessage = $input.next(".error-message");
+
+    if ($input.val().trim() === "") {
+        $input.addClass("error");
+        $errorMessage.show();
+    } else {
+        $input.removeClass("error");
+        $errorMessage.hide();
+    }
+  });
+
 }); 
