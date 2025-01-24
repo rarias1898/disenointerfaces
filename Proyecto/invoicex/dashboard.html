@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Invoicex</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Invoicex</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <!-- <h2>Menu</h2> -->
+      <img src="./images/logo.png" alt="logo" draggable="false" />
+      <hr>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </aside>
+    <header class="header">
+      <h1>Dashboard Header</h1>
+    </header>
+    <main class="main-content">
+      <div class="cards">
+        <div class="card card-large">
+          <div class="card-header">
+            <h1>Última factura</h1>
+            <h1>264</h1>
+          </div>
+          <hr>
+          <div class="card-body">
+            <div class="client-part">
+              <h2>Cliente</h2>
+              <p>B21597778</p>
+              <p>C/Blass Infante N44</p>
+              <p>21620 Trigueros, Huelva</p>
+            </div>
+            <div class="price-part">
+              <h2>16/09/2024</h2>
+              <h1>75.50e</h1>
+            </div>
+          </div>
+        </div>
+        <div class="card card-medium">
+          <div class="card-body">
+            <input type="text" name="factura" placeholder="Nueva factura">
+            <button>Nueva</button>
+          </div>
+        </div>
+        <div class="card card-medium">
+          <div class="card-header">
+            <h1>Noticias</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <footer class="footer">
+      <p>© 2025 Invoicex</p>
+    </footer> -->
+  </div>
+</body>
 </html>
