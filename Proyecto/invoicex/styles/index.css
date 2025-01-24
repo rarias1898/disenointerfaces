@@ -155,11 +155,13 @@ button {
 .login-buttons {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
   gap: 1rem;
 }
 
 .login-buttons input {
   height: 2rem;
+  width: 100%;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -182,50 +184,3 @@ button {
 /* ! Dashboard */
 
 
-/* MEDIAS RESPONSIVE */
-
-/* ? Teléfonos */
-@media (max-width: 767px) {
-  .index-header {
-    padding: 2rem;
-  }
-
-  .button-group {
-    flex-direction: column;
-  }
-
-  .index-main {
-    flex-direction: column;
-  }
-
-  .index-main small {
-    font-size: 1rem;
-  }
-
-  .index-main p {
-    font-size: 3rem;
-  }
-
-  .index-main img {
-    width: 95%;
-  }
-
-  .login-main form {
-    width: 90%;
-  }
-}
-
-/* ? Tablets */
-@media (max-width: 1024px) {
-  .index-header {
-    padding: 2rem 4rem;
-  }
-
-  .index-main {
-    padding: 2rem;
-  }
-
-  .index-main p {
-    font-size: 4rem;
-  }
-}

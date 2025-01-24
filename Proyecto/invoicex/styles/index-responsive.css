@@ -1,0 +1,38 @@
+@media (max-width: 767px) {
+  .index-header {
+    padding: 2rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .index-main {
+    flex-direction: column;
+  }
+
+  .index-main small {
+    font-size: 1rem;
+  }
+
+  .index-main p {
+    font-size: 3rem;
+  }
+
+  .index-main img {
+    width: 95%;
+  }
+
+  .login-main {
+    padding: 2rem;
+  }
+
+  .login-main form {
+    width: 90%;
+  }
+
+  .login-main input[type="email"],
+  .login-main input[type="password"] {
+    height: 2rem;
+  }
+}
