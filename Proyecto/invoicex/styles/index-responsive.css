@@ -85,25 +85,25 @@
   }
 
   .cards {
-    grid-template-columns: 1fr; /* Cada tarjeta ocupará todo el ancho */
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
   .card {
-    font-size: 0.875rem; /* Reducir el tamaño de la fuente para mejor ajuste */
+    font-size: 0.875rem;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .card-header,
   .card-body {
-    font-size: 1rem; /* Ajustar el tamaño de fuente */
+    font-size: 1rem;
     margin: 0 1rem;
   }
 
   .card-large,
   .card-medium {
-    grid-column: span 1; /* Adaptar todas las tarjetas a ocupar 1 columna */
+    grid-column: span 1;
     grid-row: auto;
   }
 
