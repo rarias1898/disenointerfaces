@@ -213,6 +213,11 @@ button {
 
 .sidebar ul li {
   margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .sidebar ul li a {
@@ -222,6 +227,10 @@ button {
 
 .sidebar ul li a:hover {
   text-decoration: underline;
+}
+
+.sidebar ul li img {
+  width: 1.5rem;
 }
 
 .header {

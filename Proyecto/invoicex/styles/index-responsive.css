@@ -35,4 +35,80 @@
   .login-main input[type="password"] {
     height: 2rem;
   }
+
+  .dashboard {
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    height: auto;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .sidebar hr {
+    width: 100%;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    margin: 0;
+  }
+
+  .header {
+    /* justify-content: center;
+    text-align: center;
+    padding: 1rem 0; */
+    display: none;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr; /* Cada tarjeta ocupará todo el ancho */
+    gap: 1rem;
+  }
+
+  .card {
+    font-size: 0.875rem; /* Reducir el tamaño de la fuente para mejor ajuste */
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header,
+  .card-body {
+    font-size: 1rem; /* Ajustar el tamaño de fuente */
+    margin: 0 1rem;
+  }
+
+  .card-large,
+  .card-medium {
+    grid-column: span 1; /* Adaptar todas las tarjetas a ocupar 1 columna */
+    grid-row: auto;
+  }
+
+  .footer {
+    padding: 1rem;
+    text-align: center;
+  }
 }

@@ -5,22 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard | Invoicex</title>
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/index-responsive.css">
 </head>
 <body>
   <div class="dashboard">
     <aside class="sidebar">
       <!-- <h2>Menu</h2> -->
-      <img src="./images/logo.png" alt="logo" draggable="false" />
+      <a href="./index.html"><img src="./images/logo.png" alt="logo" draggable="false" /></a>
       <hr>
       <ul>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Users</a></li>
-        <li><a href="#">Reports</a></li>
+        <li>
+          <img src="./images/home.svg" alt="">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <img src="./images/invoice.svg" alt="">
+          <a href="#">Facturas</a>
+        </li>
+        <li><a href="#">Clientes</a></li>
         <li><a href="#">Settings</a></li>
       </ul>
     </aside>
     <header class="header">
-      <h1>Dashboard Header</h1>
+      <h1>Invoicex</h1>
     </header>
     <main class="main-content">
       <div class="cards">
@@ -53,6 +60,10 @@
           <div class="card-header">
             <h1>Noticias</h1>
           </div>
+          <hr>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, corporis et animi fuga amet sit sapiente perspiciatis tempora unde id nobis fugit voluptas rem expedita sequi consequatur quasi illo nesciunt distinctio consectetur minima? Suscipit, nostrum deleniti cupiditate earum eius quaerat.</p>
+          </div>
         </div>
       </div>
     </main>
@@ -60,5 +71,7 @@
       <p>© 2025 Invoicex</p>
     </footer> -->
   </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
