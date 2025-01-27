@@ -1,0 +1,9 @@
+.ancla {
+  position: absolute;
+  top: -50px;
+}
+
+.ancla:focus {
+  top: 0;
+  background-color: yellow;
+}

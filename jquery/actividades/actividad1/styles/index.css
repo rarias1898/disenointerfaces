@@ -13,6 +13,10 @@ h1 {
   text-align: center;
 }
 
+button:disabled {
+  background-color: #b2b2b2;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -77,10 +81,6 @@ h1 {
       p {
         color: #1975e2;
         font-size: 14px;
-      }
-
-      button:disabled {
-        background-color: #b2b2b2;
       }
 
       button {

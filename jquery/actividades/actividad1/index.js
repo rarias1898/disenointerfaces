@@ -39,4 +39,20 @@ $(function() {
     }
   });
 
+  $(".nombre").on("input", function() {
+    $(".correo").on("input", function() {
+      $(".password").on("input", function() {
+        $(".repitPassword").on("input", function() {
+          $(".confirm").on("input", function() {
+            $(".boton-cliente").removeAttr("disabled")
+          })
+        })
+      })
+    })
+  })
+
+  $(".boton-cliente").on("click", function() {
+
+  })
+
 }); 
