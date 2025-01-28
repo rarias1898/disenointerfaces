@@ -51,8 +51,26 @@ $(function() {
     })
   })
 
-  $(".boton-cliente").on("click", function() {
+  $(".nombre").on("input", function() {
+    $(".correo").on("input", function() {
+      $(".password").on("input", function() {
+        $(".repitPassword").on("input", function() {
+          $(".fecha").on("input", function() {
+            $(".confirm").on("input", function() {
+              $(".boton-proveedor").removeAttr("disabled")
+            })
+          })
+        })
+      })
+    })
+  })
 
+  $(".boton-cliente, .boton-proveedor").on("click", function(event) {
+    event.preventDefault()
+
+    $(".uniForm").slideUp("slow", "swing", function() {
+      $(".gracias").slideDown("slow")
+    })
   })
 
 }); 

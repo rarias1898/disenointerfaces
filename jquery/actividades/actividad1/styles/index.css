@@ -223,3 +223,12 @@ form {
     height: 2rem;
     /* color: #f2f2f2; */
   }}
+
+  .gracias {
+    border: 10px solid #fff;
+    border-radius: .5rem;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+  }
