@@ -1,6 +1,35 @@
-.bloque {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  border-radius: 1rem;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  text-align: center;
+}
+
+canvas {
+  border: 2px solid #fff;
+  background-color: #000;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#timer {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
 }
