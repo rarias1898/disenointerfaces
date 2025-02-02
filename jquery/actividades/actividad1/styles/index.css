@@ -22,6 +22,7 @@ button:disabled {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 .card {
@@ -190,7 +191,7 @@ form button {
   width: 5rem;
   height: 2.5rem;
   border: 1px solid #b2b2b2;
-  border-radius: .5rem;
+  border-radius: 1rem;
   margin: auto;
 }
 
@@ -221,5 +222,13 @@ form {
     border-radius: 0.5rem;
     margin: 2px;
     height: 2rem;
-    /* color: #f2f2f2; */
   }}
+
+  .gracias {
+    border: 10px solid #fff;
+    border-radius: .5rem;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+  }
