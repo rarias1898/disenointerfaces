@@ -232,3 +232,16 @@ form {
     width: 50%;
     text-align: center;
   }
+
+  .password-container {
+    position: relative;
+    display: inline-block;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
