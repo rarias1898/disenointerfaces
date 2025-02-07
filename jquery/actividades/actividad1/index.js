@@ -72,23 +72,4 @@ $(function() {
       $(".gracias").slideDown("slow")
     })
   })
-
-  $("#togglePassword").on("click", function() {
-    let passwordField = $(".password");
-    let type = passwordField.attr("type") === "password" ? "text" : "password";
-    passwordField.attr("type", type);
-
-    // Cambiar el icono del ojo (opcional)
-    $(this).text(type === "password" ? "🫣" : "😲");
-  });
-
-  $("#togglePassword").on("click", function() {
-    let passwordField = $(".passwordConfirm");
-    let type = passwordField.attr("type") === "password" ? "text" : "password";
-    passwordField.attr("type", type);
-
-    // Cambiar el icono del ojo (opcional)
-    $(this).text(type === "password" ? "🫣" : "😲");
-  });
-
 }); 

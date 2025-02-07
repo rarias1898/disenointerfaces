@@ -168,9 +168,9 @@ button:disabled {
   padding: 2rem;
 }
 
-.cliente-container form input {
+/* .cliente-container form input {
   width: 30rem;
-}
+} */
 
 fieldset {
   border: none;
@@ -238,10 +238,12 @@ form {
     display: inline-block;
 }
 
-#togglePassword {
+.password {
+  position: relative;
+}
+
+.ojo {
+  width: 20px;
   position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+  translate: -150% 50%;
 }
