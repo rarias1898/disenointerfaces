@@ -1,35 +1,40 @@
-body {
+#game-board {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.snake {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  position: absolute;
+}
+
+.food {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#ui {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #333;
-  font-family: Arial, sans-serif;
-}
-
-.game-container {
-  text-align: center;
-}
-
-canvas {
-  border: 2px solid #fff;
-  background-color: #000;
-}
-
-.controls {
   margin-top: 20px;
 }
 
-button {
+#start-button, #restart-button {
   padding: 10px 20px;
-  font-size: 16px;
-  margin: 5px;
+  margin: 0 10px;
+  background-color: lightgray;
+  border: none;
   cursor: pointer;
 }
 
 #timer {
-  color: #fff;
   font-size: 20px;
-  margin-top: 10px;
+  margin: 0 10px;
 }

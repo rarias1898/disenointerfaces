@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de la Serpiente</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-  </head>
-  <body>
-    <div class="game-container">
-      <canvas id="gameCanvas" width="400" height="400"></canvas>
-      <div class="controls">
-        <button id="startButton">Iniciar</button>
-        <button id="restartButton" disabled>Reiniciar</button>
-        <div id="timer">Tiempo: 01:00</div>
-      </div>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <h1>Juego de la Serpiente</h1>
+    <div id="game-controls">
+        <button id="start-button">Iniciar Juego</button>
+        <button id="restart-button" style="display: none;">Reiniciar Juego</button>
     </div>
+    <div id="game-info">
+        <p>Tiempo restante: <span id="timer">60</span> segundos</p>
+    </div>
+    <div id="game-board"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>

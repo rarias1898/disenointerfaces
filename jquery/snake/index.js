@@ -1,103 +1,134 @@
-$(document).ready(function () {
-  const canvas = $('#gameCanvas')[0];
-  const ctx = canvas.getContext('2d');
-  const startButton = $('#startButton');
-  const restartButton = $('#restartButton');
-  const timerDisplay = $('#timer');
+$(document).ready(function() {
+    const BOARD_SIZE = 20;
+    let snake = [{ x: 10, y: 10 }];
+    let food = { x: 15, y: 12 };
+    let dx = 1;
+    let dy = 0;
+    let score = 0;
+    let gameInterval;
+    let timerInterval;
+    let timeLeft = 60;
 
-  let serpiente = [{ x: 10, y: 10 }];
-  let direccion = { x: 0, y: 0 };
-  let food = { x: 5, y: 5 };
-  let gameInterval;
-  let tiempo = 60;
-  let puntuacion = 0;
+    function createBoard() {
+        $("#game-board").empty();
+        for (let i = 0; i < BOARD_SIZE; i++) {
+            for (let j = 0; j < BOARD_SIZE; j++) {
+                $("#game-board").append("<div class='cell' data-x='" + j + "' data-y='" + i + "'></div>");
+            }
+        }
+    }
 
-  function drawserpiente() {
-      ctx.fillStyle = 'lime';
-      serpiente.forEach(segment => ctx.fillRect(segment.x * 20, segment.y * 20, 20, 20));
-  }
+    function drawSnake() {
+        $(".snake").remove();
+        for (let i = 0; i < snake.length; i++) {
+            $("#game-board").append("<div class='snake' style='left: " + snake[i].x * 20 + "px; top: " + snake[i].y * 20 + "px;'></div>");
+        }
+    }
 
-  function drawFood() {
-      ctx.fillStyle = 'red';
-      ctx.fillRect(food.x * 20, food.y * 20, 20, 20);
-  }
+    function drawFood() {
+        $(".food").remove();
+        $("#game-board").append("<div class='food' style='left: " + food.x * 20 + "px; top: " + food.y * 20 + "px;'></div>");
+    }
 
-  function moveserpiente() {
-      const head = { x: serpiente[0].x + direccion.x, y: serpiente[0].y + direccion.y };
+    function moveSnake() {
+        const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+        snake.unshift(head);
 
-      if (head.x < 0 || head.x >= 20 || head.y < 0 || head.y >= 20) {
-          endGame();
-          return;
-      }
+        if (head.x === food.x && head.y === food.y) {
+            score++;
+            generateFood();
+        } else {
+            snake.pop();
+        }
+    }
 
-      if (head.x === food.x && head.y === food.y) {
-          food = { x: Math.floor(Math.random() * 20), y: Math.floor(Math.random() * 20) };
-          puntuacion++;
-      } else {
-          serpiente.pop();
-      }
+    function generateFood() {
+        food = {
+            x: Math.floor(Math.random() * BOARD_SIZE),
+            y: Math.floor(Math.random() * BOARD_SIZE)
+        };
+    }
 
-      serpiente.unshift(head);
-  }
+    function checkCollision() {
+        const head = snake[0];
+        if (head.x < 0 || head.x >= BOARD_SIZE || head.y < 0 || head.y >= BOARD_SIZE) {
+            return true;
+        }
+        for (let i = 1; i < snake.length; i++) {
+            if (head.x === snake[i].x && head.y === snake[i].y) {
+                return true;
+            }
+        }
+        return false;
+    }
 
-  function update() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      drawserpiente();
-      drawFood();
-      moveserpiente();
+    function updateTimer() {
+        timeLeft--;
+        $("#timer").text("Time Left: " + timeLeft);
+        if (timeLeft <= 0) {
+            gameOver();
+        }
+    }
 
-      if (serpiente.slice(1).some(segment => segment.x === serpiente[0].x && segment.y === serpiente[0].y)) {
-          endGame();
-      }
-  }
+    function gameOver() {
+        clearInterval(gameInterval);
+        clearInterval(timerInterval);
+        alert("Game Over! Score: " + score);
+        $("#start-button").show();
+        $("#restart-button").show();
+    }
 
-  function startGame() {
-      serpiente = [{ x: 10, y: 10 }];
-      direccion = { x: 0, y: 0 };
-      food = { x: 5, y: 5 };
-      puntuacion = 0;
-      tiempo = 60;
-      startButton.prop('disabled', true);
-      restartButton.prop('disabled', false);
-      gameInterval = setInterval(update, 100);
-      timerInterval = setInterval(updateTimer, 1000);
-  }
+    function gameLoop() {
+        moveSnake();
+        if (checkCollision()) {
+            gameOver();
+        }
+        drawSnake();
+        drawFood();
+    }
 
-  function endGame() {
-      clearInterval(gameInterval);
-      clearInterval(timerInterval);
-      alert(`Juego terminado! Puntuación: ${puntuacion}`);
-      startButton.prop('disabled', false);
-      restartButton.prop('disabled', true);
-  }
+    $("#start-button").click(function() {
+        console.log("hola")
+        $(this).hide();
+        $("#restart-button").hide();
+        createBoard();
+        snake = [{ x: 10, y: 10 }];
+        food = { x: 15, y: 12 };
+        dx = 1;
+        dy = 0;
+        score = 0;
+        timeLeft = 60;
+        $("#timer").text(timeLeft);
+        gameInterval = setInterval(gameLoop, 100);
+        timerInterval = setInterval(updateTimer, 1000);
+    });
 
-  function updateTimer() {
-      tiempo--;
-      const minutes = String(Math.floor(tiempo / 60)).padStart(2, '0');
-      const seconds = String(tiempo % 60).padStart(2, '0');
-      timerDisplay.text(`Tiempo: ${minutes}:${seconds}`);
-      if (tiempo <= 0) {
-          endGame();
-      }
-  }
+    $("#restart-button").click(function() {
+        $("#start-button").click();
+    });
 
-  startButton.on('click', startGame);
-  restartButton.on('click', startGame);
+    $(document).keydown(function(event) {
+        if (gameInterval) {
+            switch (event.which) {
+                case 37:
+                    dx = -1;
+                    dy = 0;
+                    break;
+                case 38:
+                    dx = 0;
+                    dy = -1;
+                    break;
+                case 39:
+                    dx = 1;
+                    dy = 0;
+                    break;
+                case 40:
+                    dx = 0;
+                    dy = 1;
+                    break;
+            }
+        }
+    });
 
-  $(document).on('keydown', (e) => {
-      switch (e.key) {
-          case 'ArrowUp':
-              if (direccion.y === 0) direccion = { x: 0, y: -1 };
-              break;
-          case 'ArrowDown':
-              if (direccion.y === 0) direccion = { x: 0, y: 1 };
-              break;
-          case 'ArrowLeft':
-              if (direccion.x === 0) direccion = { x: -1, y: 0 };
-              break;
-          case 'ArrowRight':
-              if (direccion.x === 0) direccion = { x: 1, y: 0 };
-              break;
-      }
-  });
+    $("#restart-button").hide();
 });
