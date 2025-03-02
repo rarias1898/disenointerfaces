@@ -55,7 +55,7 @@ button {
 .index-header img {
   cursor: pointer;
   width: auto;
-  height: 7rem;
+  height: 9rem;
 }
 
 .button-group {
@@ -130,7 +130,7 @@ button {
 }
 
 .login-main img {
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -231,10 +231,22 @@ button {
 
 .sidebar ul li a:hover {
   text-decoration: underline;
+  color: var(--color-accents);
 }
 
 .sidebar ul li img {
   width: 1.5rem;
+}
+
+.sidebar img {
+  width: auto;
+  height: 10em;
+  
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -334,9 +346,11 @@ button {
 
   .privlink {
     font-weight: bold;
+    color: var(--color-accents);
 
     &:hover {
       text-decoration: underline;
+      text-underline-offset: .5rem;
     }
   }
 
@@ -361,6 +375,6 @@ button {
 
 .blur {
   filter: blur(5px);
-  pointer-events: none; /* Evita la interacción hasta aceptar cookies */
-  user-select: none; /* Evita selección de texto */
+  pointer-events: none;
+  user-select: none;
 }
