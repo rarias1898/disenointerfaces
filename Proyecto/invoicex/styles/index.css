@@ -307,6 +307,11 @@ button {
   border-radius: 8px;
   padding: 0.5rem;
   color: var(--color-gray);
+
+  &:hover {
+    background-color: var(--color-gray);
+    color: var(--color-background);
+  }
 }
 
 .card-large {
@@ -352,4 +357,10 @@ button {
 .priv-footer {
   bottom: 0;
   text-align: center;
+}
+
+.blur {
+  filter: blur(5px);
+  pointer-events: none; /* Evita la interacción hasta aceptar cookies */
+  user-select: none; /* Evita selección de texto */
 }
